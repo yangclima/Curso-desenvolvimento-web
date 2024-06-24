@@ -1,41 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <script>
+    </script>
     <title>Teste</title>
 </head>
+
 <body>
     <main>
-        <div class="sigin-side">
-            <h1>Seja bem vindo! </h1>
-            <p>Insira suas informações pessoais para se cadastrar e usufruir de todas as nossas funcionalidades. Se você já possui uma conta faça login clicando no botão abaixo</p>
-            <button>Login</button>
-        </div>
-        <div class="sigin-side-form">
-            <h1>Crie uma conta</h1>
+        <div id="registration">
 
-            <div class="registration-icons">
-                <div id="google"><img src="icons/google.png" alt=""></div>
-                <div id="facebook"><img src="icons/facebook.png" alt=""></div>
-                <div id="github"><img src="icons/github.png" alt=""></div>
+            <div class="registration-text-box">
+                <div class="registration-text">
+                    <div class="content">
+                        <h1>Seja bem vindo! </h1>
+                        <p>Insira suas informações pessoais para se cadastrar e usufruir de todas as nossas
+                            funcionalidades.
+                            Se você já possui uma conta faça login clicando no botão abaixo</p>
+                        <button onclick="alternate_to_registration()">Login</button>
+                    </div>
+                </div>
             </div>
 
-            <p>Ou use o seu email para se cadastrar</p>
+            <div class="registration-form-box">
+                <div class="registration-form">
+                    <h1>Crie uma conta</h1>
 
+                    <div class="acess-icons">
+                        <div id="google"><img src="icons/google.png" alt=""></div>
+                        <div id="facebook"><img src="icons/facebook.png" alt=""></div>
+                        <div id="github"><img src="icons/github.png" alt=""></div>
+                    </div>
 
-            <form action=""">
-                <input type="text" id="name" placeholder="Nome"><br>
+                    <p>Ou use o seu email para se cadastrar</p>
 
-                <input type="email" id="email" placeholder="Email"><br>
-
-                <input type="password" id="password" placeholder="Senha"><br>
-
-                <button>Cadastrar</button>
-            </form>
+                    <form action="">
+                        <input type="text" id="name" placeholder="Nome"><br>
+                        <input type="email" id="email" placeholder="Email"><br>
+                        <input type="password" id="password" placeholder="Senha"><br>
+                        <button>Cadastrar</button>
+                    </form>
+                </div>
+            </div>
 
         </div>
+
+        <div id="login">
+
+            <div class="login-text-box">
+                <div class="login-text">
+
+                    <h1>Bem vindo de volta! </h1>
+                    <p>Insira seu email e senha para acessar livremente todas as funcionalidades. Se ainda não
+                        possui uma conta clique no botão abaixo e cadastre-se</p>
+                    <button id="login_button">Cadastrar</button>
+
+                </div>
+            </div>
+
+            <div class="login-form-box">
+                <div class="login-form">
+                    <h1>Entrar</h1>
+
+                    <div class="acess-icons">
+
+                        <div id="google">
+                            <img src="icons/google.png" alt="">
+                        </div>
+
+                        <div id="facebook">
+                            <img src="icons/facebook.png" alt="">
+                        </div>
+
+                        <div id="github">
+                            <img src="icons/github.png" alt="">
+                        </div>
+                    </div>
+
+                    <p>Ou use o seu email para se cadastrar</p>
+
+                    <form action="">
+                        <input type="email" id="email" placeholder="Email"><br>
+                        <input type="password" id="password" placeholder="Senha"><br>
+                        <a href="index.html">
+                            <p>Esqueci minha senha</p>
+                        </a>
+                        <button>Entrar</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
     </main>
 </body>
+
 </html>
